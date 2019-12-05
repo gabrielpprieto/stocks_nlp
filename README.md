@@ -73,8 +73,7 @@ can be seen in the following image:
 
 ![Train and Test Accuracy](./images/results.png)
 
-Not a great improvement was observed on the model with all extra features besides the text in comparison with
-the single feature model.
+Not a great improvement was observed on the model with all extra features in comparison to the single feature model.
 
 On the other hand, 57% accuracy score on the testing data is a 73% improvement on a baseline random choice model.
 
