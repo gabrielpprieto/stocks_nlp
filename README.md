@@ -18,14 +18,15 @@ According to the Efficient Market Hypothesis, stock prices reflect all available
 filings release dates were used to calculate the percentage change on the stock price after companies
 announce major changes.
 
-### Data Collections
+### Data Collection
 ---
 The analysis was done on all companies in the S&P 500 and information on companies such as sector and
-sub-industry was collected by scraping the Wikipedia page for the index.
+sub-industry was collected by scraping the [Index's Wikipedia Page]((https://en.wikipedia.org/wiki/List_of_S%26P_500_companies))
 
-As a next step, the SEC Edgar website was scraped to gather the full text file for each 8-K form
-companies have filed from Jan-2011 to Sep-2019 and all the text was concatenated and release dates with
-the timestamp were extracted for each individual filing. Over 63,000 documents were retrieved from the database.
+As a next step, the [SEC Edgar website](https://www.sec.gov/edgar/searchedgar/companysearch.html) was scraped
+to gather the full text file for each 8-K form companies have filed from Jan-2011 to Sep-2019 and all the
+text was concatenated and release dates with the timestamp were extracted for each individual filing.
+Over 63,000 documents were retrieved from the database.
 
 With the information on the release date, a percentage change was calculated based on the next opening/closing
 of the market, depending on the filing's release time, for each filing and normalized by the percentage
@@ -43,7 +44,7 @@ up with almost 57,000 documents to be analyzed.
 ### Feature Engineering
 ---
 Regarding the features that were used in the model to help on predicting the movements were:
-- Item types of events that trigger a public company's obligation to file a current report [Learn More](https://www.sec.gov/fast-answers/answersform8khtm.html)
+- Item types of events that trigger a public company's obligation to file a current report [Learn More - Item Types](https://www.sec.gov/fast-answers/answersform8khtm.html)
 - Historical Returns for a week, month, quarter and year prior to the release date
 - Sector and Sub-Industry
 - Volatility of the Market on the release date (VIX)
