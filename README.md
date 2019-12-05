@@ -51,7 +51,7 @@ Regarding the features that were used in the model to help on predicting the mov
 ### Preprocessing
 ---
 The text preprocessing was done by removing english stop words and punctuation as well as lemmatizing the words.
-Due to unbalanced classes (68.24% - Neutral) a Random OverSampler was used on training data to prevent model bias
+Due to unbalanced classes (68.24% - Neutral) a Random OverSampler was used on the training data to prevent model bias
 to the majority class.
 
 ### Modeling
