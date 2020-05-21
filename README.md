@@ -1,5 +1,4 @@
-## General Assembly DSI 9 - Gabriel Perez Prieto
-## Capstone Project - Stock Price Movements
+## Predicting Stock Price Movements with Text Analysis
 
 ### Problem Statement
 ---
